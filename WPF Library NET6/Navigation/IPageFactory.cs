@@ -2,5 +2,5 @@
 
 public interface IPageFactory
 {
-    IPage CreatePage ();
+    T CreatePage<T> () where T : IPage;
 }
